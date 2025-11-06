@@ -1,0 +1,234 @@
+/* Admin Styles for Post/Product Filter v1.1.0 */
+
+.ppf-preset-form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.ppf-preset-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.ppf-tabs-wrapper {
+    margin-top: 30px;
+}
+
+.nav-tab-wrapper {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+.nav-tab {
+    position: relative;
+}
+
+.nav-tab .new-badge {
+    background: #00a32a;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.tab-content {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content h3 {
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.tab-content h3 .new-badge {
+    background: #00a32a;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.category-selector {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 4px;
+}
+
+.category-selector label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 5px;
+    transition: background 0.2s;
+}
+
+.category-selector label:hover {
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+.category-selector input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.ppf-info-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.ppf-info-box h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.ppf-info-box ol {
+    line-height: 2;
+}
+
+.wp-list-table code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.wp-list-table input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+.no-presets {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.no-presets h2 {
+    color: #333;
+}
+
+.no-presets p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Color Picker Overrides */
+.wp-picker-container {
+    display: inline-block;
+}
+
+/* Form Table Improvements */
+.form-table th {
+    width: 250px;
+    font-weight: 600;
+}
+
+.form-table td input[type="number"] {
+    width: 80px;
+}
+
+.form-table td input[type="text"].regular-text {
+    width: 400px;
+}
+
+.form-table td textarea.large-text {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-table .description {
+    color: #646970;
+    font-style: italic;
+}
+
+/* Submit Button Area */
+p.submit {
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .form-table th {
+        width: auto;
+    }
+    
+    .form-table td input[type="text"].regular-text {
+        width: 100%;
+    }
+    
+    .category-selector {
+        max-height: 200px;
+    }
+}
+
+/* Success/Error Messages */
+.notice {
+    margin: 20px 0;
+}
+
+/* Loading State */
+.ppf-preset-form.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Better Checkbox Styling */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+label {
+    vertical-align: middle;
+}
+
+/* Conditional Display Sections */
+.styling-section {
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.styling-section[style*="display: none"] {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Notice for hidden sections */
+.ppf-notice-info {
+    background: #e7f3ff;
+    border-left: 4px solid #2271b1;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.ppf-notice-info p {
+    margin: 0;
+    color: #1d2327;
+}
